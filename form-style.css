@@ -1,0 +1,21 @@
+:root {
+    --default-black: #1D1A1A;
+    --default-white: #FFF;
+    --default-orange: #FD6925;
+    --default-gray: #CFCFCF;
+}
+
+body {
+    background-color: var(--default-black);
+    color: var(--default-white);
+}
+
+.submit-button {
+    background-color: var(--default-orange);
+
+    border-radius: ;
+
+    width: 250px;
+    height: 60px;
+
+}
