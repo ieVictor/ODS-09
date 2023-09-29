@@ -46,18 +46,270 @@ body{
 }
 
 .header-content ul li a{
-    padding: 16px;
+    padding: 1rem;
     font-weight: bold;
     color: #fefefe;
     text-decoration: none ;
 }
 
-footer {
+.hero-content{
     width: 100%;
-    height: 80px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 40px;
+}
+
+.hero-content-1 {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.hero-content-1 h2 {
+    color: var(--default-white, #FFF);
+font-family: Share;
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -5.04px;
+margin-bottom: 1rem;
+}
+
+.hero-content span {
+    color: var(--default-white, #FFF);
+font-family: Montserrat Alternates;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 1rem;
+}
+.hero-content-1 button {
+    width: 250px;
+height: 60px;
+flex-shrink: 0;
+border: none;
+color: var(--default-white, #FFF);
+font-family: Montserrat Alternates;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    border-radius: var(--small-odsLogoRadius, 10px);
+background: var(--default-orange, #FD6925);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+cursor: pointer;
+}
+
+.hero-content-1 button:hover{
+    border: 2px solid var(--default-gray);
+    transform: .5s ease;
+}
+
+.img-hero {
+    width:600px;
+    height: 683px;
+    flex-shrink: 0;
+}
+.img-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 65px;
+    background: url(/imgs/lamp-image.png), lightgray 50% / cover no-repeat, #D9D9D9;
+}
+
+#hero-cards {
     background-color: var(--default-white);
+}
+
+.hero-cards-content {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
     color: var(--default-black);
 }
+.hero-cards-content button {
+width: 250px;
+height: 60px;
+flex-shrink: 0;
+border-radius: var(--small-odsLogoRadius, 10px);
+border: 1px solid var(--default-orange, #FD6925);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+color: var(--default-orange, #FD6925);
+font-family: Montserrat Alternates;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+background: none;
+}
+.cards-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 82px;
+}
+
+.cards-container h4 {
+    color: #000;
+text-align: left;
+font-family: Volkhov;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.cards-container span {
+    color: #000;
+    font-family: Montserrat Alternates;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+footer {
+    width: 100%;
+    height: 100%;
+    background-color: var(--default-orange);
+    color: var(--default-black);
+}
+.footer_contact {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.fig-footer {
+    display: flex;
+    width: 50%;
+}
+.fig-footer img {
+    height: 315px;
+    z-index: 10;
+}
+.fig-footer img:last-child {
+    z-index: 0;
+    height: 287px;
+    top: 70px;
+    right: 200px;
+    position: relative;
+}
+
+.contact_inf{
+    display: flex;
+    padding: 3rem 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contact_inf span {
+    color: var(--default-white, #FFF);
+    font-family: 'Share', sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 1rem;
+}
+
+.contact_inf label{
+    color: var(--default-gray, #CFCFCF);
+    font-family: 'Share', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: .5rem;
+}
+
+.contact_inf input{
+    width: 70%;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    color: var(--default-gray, #CFCFCF);
+    padding: 8px 1rem;
+    border-radius: 12px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    font-size: .9rem;
+    background: var(--default-white, #FFF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.contact_inf input:focus{
+    color: var(--default-orange);
+}
+
+.contact_inf button {
+    position: relative;
+    font-family: 'Montserrat Alternates', sans-serif;
+    bottom: 35px;
+    left: 70%;
+    padding: .5rem 1rem;
+    margin-left: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--default-gray);
+    color: var(--default-orange);
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.social_contact_links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.social_contact_links ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.social_contact_links ul li {
+    display: flex;
+}
+
+.social_contact_links ul li img {
+    height: 40px;
+}
+
+
+.footer_inf{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+.footer_inf span{
+    width: 100%;
+    color: var(--default-white, #CFCFCF);
+    text-align: center;
+    font-family: Share;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
 @media screen and (max-width: 359px){
     body{
         display: none;
@@ -131,7 +383,7 @@ footer {
     }
 
     .hero-content-1 button{
-        width: 126px;
+        width: 150px;
         height: 30px;
         border: none;
         border-radius: 5px;
@@ -139,7 +391,7 @@ footer {
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         color: var(--default-white, #FFF);
         font-family: 'Montserrat Alternates', sans-serif;
-        font-size: .8rem;
+        font-size: 1rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -161,6 +413,10 @@ footer {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        padding: 0;
+    }
+    .cards-container {
+        display: block;
     }
     .hero-cards-content button {
         width: 175px;
@@ -172,7 +428,7 @@ footer {
         box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.13);
         color: var(--default-orange, #FD6925);
         font-family: 'Montserrat Alternates', sans-serif;
-        font-size: 12px;
+        font-size: 1rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -229,84 +485,4 @@ footer {
         justify-content: center;
     }
 
-    .contact_inf span {
-        color: var(--default-white, #FFF);
-        font-family: 'Share', sans-serif;
-        font-size: 1.2rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        margin-bottom: 1rem;
-    }
-
-    .contact_inf label{
-        color: var(--default-gray, #CFCFCF);
-        font-family: 'Share', sans-serif;
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        margin-bottom: .5rem;
-    }
-
-    .contact_inf input{
-        width: 70%;
-        box-sizing: border-box;
-        outline: none;
-        border: none;
-        color: var(--default-gray, #CFCFCF);
-        padding: 8px 1rem;
-        border-radius: 12px;
-        font-family: 'Montserrat Alternates', sans-serif;
-        text-align: center;
-        font-size: .9rem;
-        margin-bottom: 1rem;
-        background: var(--default-white, #FFF);
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
-
-    .contact_inf input:focus{
-        color: var(--default-orange);
-    }
-
-    .social_contact_links {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    
-
-    .social_contact_links ul{
-        list-style: none;
-        display: flex;
-        gap: 10px;
-    }
-
-    .social_contact_links ul li {
-        display: flex;
-    }
-
-    .social_contact_links ul li img {
-        height: 40px;
-    }
-
-    .footer_inf{
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem 0;
-    }
-    .footer_inf span{
-        width: 100%;
-        color: var(--default-gray, #CFCFCF);
-        text-align: center;
-        font-family: Share;
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
 }
