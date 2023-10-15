@@ -16,7 +16,7 @@ body {
     color: var(--default-white);
 }
 
-#header{
+#header {
     max-width: 100%;
 }
 
@@ -41,14 +41,14 @@ body {
     display: none;
 }
 
-.header-content ul li a{
+.header-content ul li a {
     padding: 1rem;
     font-weight: bold;
     color: #fefefe;
     text-decoration: none ;
 }
 
-.header-content ul li a:hover{
+.header-content ul li a:hover {
     color: var(--default-orange);
     transition: .5s ease;
 }
@@ -120,8 +120,7 @@ textarea {
 }
 
 .text-box:focus, textarea:focus {
-    color: var(--default-black);
-    
+    color: var(--default-black); 
 }
 
 .form-content {
@@ -164,7 +163,6 @@ textarea {
 table {
     width: 100%;
     display: flex;
-
 }
 
 h4 {
@@ -172,6 +170,26 @@ h4 {
     font-weight: 600;
     font-size: 3rem;
     text-align: center;
+}
+
+.footer_inf {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    margin-top: 15px;
+}
+.footer_inf span {
+    width: 100%;
+    color: var(--default-white, #CFCFCF);
+    text-align: center;
+    font-family: Share;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 @media screen and (max-width: 359px) {
