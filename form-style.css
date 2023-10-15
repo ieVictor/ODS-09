@@ -119,14 +119,8 @@ textarea {
     margin-bottom: 20px;
 }
 
-
-
 .text-box:focus, textarea:focus {
     color: var(--default-black);
-    
-}
-
-.form-content tr td {
     
 }
 
@@ -149,11 +143,15 @@ textarea {
 
 .form-inputs label {
     justify-content: flex-start;
-    display: flex;
+}
+
+.opinion-container {
     width: 100%;
 }
 
 label {
+    width: 100%;
+    display: flex;
     font-family: var(--font-labelFont);
     margin-left: 7px;
     margin-bottom: 5px;
