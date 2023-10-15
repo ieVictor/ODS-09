@@ -67,6 +67,12 @@ body {
 
     width: 250px;
     height: 60px;
+
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    border: 2px solid var(--default-gray)
 }
 
 .container {
