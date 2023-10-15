@@ -22,3 +22,6 @@ Nossa jornada de desenvolvimento contou com o uso das seguintes ferramentas:
 
 ### Autores
 Este projeto foi concebido e desenvolvido por Victor Gabriel Lucio e Weslley Silva.
+
+### Github Pages
+**Link:** [https://ievictor.github.io/ODS-09/](https://ievictor.github.io/ODS-09/)
