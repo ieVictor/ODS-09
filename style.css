@@ -87,7 +87,7 @@ body{
 
 .hero-content span {
     color: var(--default-white, #FFF);
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates";
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -101,7 +101,7 @@ body{
     flex-shrink: 0;
     border: none;
     color: var(--default-white, #FFF);
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates";
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -114,7 +114,6 @@ body{
 
 .hero-content-1 button:hover{
     border: 2px solid var(--default-gray);
-    transform: .5s ease;
 }
 
 .img-hero {
@@ -127,7 +126,6 @@ body{
     height: 100%;
     object-fit: cover;
     border-radius: 65px;
-    background: url(/imgs/lamp-image.png), lightgray 50% / cover no-repeat, #D9D9D9;
 }
 
 #hero-cards {
@@ -148,7 +146,7 @@ body{
     border: 1px solid var(--default-orange, #FD6925);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     color: var(--default-orange, #FD6925);
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates";
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -176,7 +174,7 @@ body{
 
 .cards-container span {
     color: #000;
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates";
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
