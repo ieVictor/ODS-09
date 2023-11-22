@@ -35,7 +35,7 @@
                     <tr>
                         <td>
                             <div class="form-container">
-                                <div class="form-inputs">
+                                <form class="form-inputs" id="form-inputs">
                                     <label for="name">Nome</label>
                                     <input type="text" name="name" id="name" placeholder="Insira seu nome" class="text-box"><br>
                                     <label for="lastname">Sobrenome</label>
@@ -45,7 +45,7 @@
                                     <label for="email">E-mail</label>
                                     <input type="email" name="email" id="email" placeholder="Insira seu email" class="text-box"><br>
                                     <button type="submit" value="Enviar" class="submit-button">Enviar</button><br>
-                                </div>
+                                </form>
                                 <div class="opinion-container">
                                     <label for="opinion">Dê sua opinião</label>
                                     <textarea name="opinion" id="opinion" cols="30" rows="10" placeholder="Insira seu texto" required></textarea>
@@ -56,6 +56,12 @@
                 </tbody>
             </table>
         </div>
+    </section>
+    <section id="form-list" class="form-list">
+        <ul id="list">
+            <script src="form-script.js"></script>
+        </ul>
+
     </section>
     <!--Footer -->
     <footer id="contact_section">
