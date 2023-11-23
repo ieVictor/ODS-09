@@ -145,14 +145,14 @@ document.getElementById('search-id').addEventListener('click', function() {
 })
 
 // Event listener para procurar uma opinião por email
-document.getElementById('search-id').addEventListener('click', function() {
-    var id = prompt('Digite o ID que você deseja procurar');
+document.getElementById('search-email').addEventListener('click', function() {
+    var email = prompt('Digite o email que você deseja procurar');
 
-    if (id !== null) {
+    if (email !== null) {
         var found = false;
 
         for (var i = 0; i < formList.length; i++) {
-            if (formList[i].id == id) {
+            if (formList[i].email === email) {
                 alert(
                     `Nome: ${formList[i].name}\n` +
                     `Sobrenome: ${formList[i].lastname}\n` +
@@ -166,10 +166,10 @@ document.getElementById('search-id').addEventListener('click', function() {
         }
         
         if (!found) {
-            alert("ID não encontrado!");
+            alert("Email não encontrado!");
         }     
     } else {
-        alert("Nenhum id inserido!");
+        alert("Nenhum email inserido!");
     }
 })
 
