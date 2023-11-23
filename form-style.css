@@ -179,10 +179,64 @@ h4 {
 }
 
 /* Form list */
+.delete-button {
+    color: var(--default-gray);
+    background-color: var(--default-orange);
+    border-style: none;
+    text-align: center;
+    border-radius: 3px;
+    width: 1.5rem;
+    height: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#list-buttons{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+    >button {
+        color: var(--default-white);
+        background-color: var(--default-orange);
+        border-style: none;
+        border-radius: var(--small-odsLogoRadius);
+    
+        width: 10em;
+        height: 4em;
+        font-family: var(--font-buttonFont);
+        font-size: .9em;
+        font-weight: 400;
+        cursor: pointer;
+    
+        &:hover {
+            border: 2px solid var(--default-gray);
+        }
+    }
+}
+
+#search-selector {
+    color: var(--default-white);
+    background-color: var(--default-orange);
+
+    width: 10em;
+    height: 4em;
+    font-family: var(--font-buttonFont);
+    font-size: 1em;
+    font-weight: 400;
+    border-style: none;
+    border-radius: var(--small-odsLogoRadius);
+}
+
 .form-list {
-    display: inline;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: auto;
-    width: 50%;
+    width: auto;
     margin-top: 20px;
     padding: 0;
     
@@ -193,38 +247,42 @@ h4 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
 
         >li {
-            width: 65%;
+            display: inline;
+
+            width: 75%;
             background-color: var(--default-white);
             padding: 20px;
             margin-bottom: 20px;
             border-radius: var(--small-odsLogoRadius);
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
             
-            >.form-name {
-                font-weight: bold;
-                color: var(--default-black);
+            >.opinion-header {
+                display: flex;
+                justify-content: space-between;
+                
+                >.form-name {
+                    font-weight: bold;
+                    color: var(--default-black);
+                }
             }
-        }
-        
+
+            .form-email {
+                color: var(--default-gray);
+                font-style: italic;
+            }
+
+            .form-opinion {
+                font-weight: bold;
+                color: var(--default-gray);
+            }
+        }   
     }
-    
 }
 
-.form-name {
-    font-weight: bold;
-    color: var(--default-black);
-}
 
-.form-email {
-    color: var(--default-gray);
-    font-style: italic;
-}
-
-.form-opinion {
-    color: var(--default-gray);
-}
 
 .footer_inf {
     display: flex;

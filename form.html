@@ -37,13 +37,13 @@
                             <div class="form-container">
                                 <form class="form-inputs" id="form-inputs">
                                     <label for="name">Nome</label>
-                                    <input type="text" name="name" id="name" placeholder="Insira seu nome" class="text-box"><br>
+                                    <input type="text" name="name" id="name" placeholder="Insira seu nome" class="text-box" required><br>
                                     <label for="lastname">Sobrenome</label>
                                     <input type="text" name="lastname" id="lastname" placeholder="Insira seu sobrenome" class="text-box"><br>
                                     <label for="age">Idade</label>
                                     <input type="number" name="age" id="age" min="16" max="100" placeholder="Insira sua idade" class="text-box"><br>
                                     <label for="email">E-mail</label>
-                                    <input type="email" name="email" id="email" placeholder="Insira seu email" class="text-box"><br>
+                                    <input type="email" name="email" id="email" placeholder="Insira seu email" class="text-box" required><br>
                                     <button type="submit" value="Enviar" class="submit-button">Enviar</button><br>
                                 </form>
                                 <div class="opinion-container">
@@ -59,9 +59,13 @@
     </section>
     <section id="form-list" class="form-list">
         <ul id="list">
-            <script src="form-script.js"></script>
         </ul>
-
+        <div id="list-buttons">
+            <button type="button" id="deleteAll-button" style="display: none;" onclick="deleteAll()">Deletar Todos</button>
+            <button type="button" id="search-id" style="display: none;">Procurar por ID</button>
+            <button type="button" id="search-email" style="display: none;"; onclick="searchByEmail()">Procurar por E-mail</button>
+        </div>
+        <script src="form-script.js"></script>
     </section>
     <!--Footer -->
     <footer id="contact_section">
