@@ -290,6 +290,12 @@ h4 {
                 font-weight: bold;
                 color: var(--default-gray);
             }
+
+            .form-date {
+                font-weight: lighter;
+                color: var(--default-gray);
+                font-style: italic;
+            }
         }   
     }
 }

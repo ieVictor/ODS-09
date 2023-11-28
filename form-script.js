@@ -4,13 +4,21 @@ var count = 1;
 
 // Função para adicionar um novo comentário
 function addOpinion(name, lastname, age, email, opinion) {
+    var date = new Date();
+    var dateString = 
+            date.getDate() + '/' +
+            (date.getMonth() + 1) + '/' +
+            date.getFullYear() + ' ' +
+            date.getHours() + ':' + date.getMinutes() ;
+
     var newOpinion = { 
         id: count++,
         name: name,
         lastname: lastname,
         age: parseInt(age),
         email: email,
-        opinion: opinion
+        opinion: opinion,
+        date: dateString
     }
 
     formList.push(newOpinion);
@@ -53,7 +61,8 @@ function renderFormList() {
                 <button type="submit" class="delete-button" onclick="deleteOpinion(${opinion.id})">X</button>  
             </div>` +
             `<span class="form-email">${opinion.email}</span><br>` +
-            `<span class="form-opinion">${opinion.opinion}</span>`;
+            `<span class="form-opinion">${opinion.opinion} </span><br><br>` +
+            `<span class="form-date">(${opinion.date})</span>`;
 
         listItem.innerHTML = content;
         formListElement.appendChild(listItem);
@@ -61,16 +70,16 @@ function renderFormList() {
 
     // Buttons display
     var deleteButtonElement = document.getElementById('deleteAll-button');
-    var searchByIdElement = document.getElementById('search-id');
+    var searchByNameElement = document.getElementById('search-name');
     var searchByEmailElement = document.getElementById('search-email');
 
     if(formList.length > 0) {
         deleteButtonElement.style.display = 'block';
-        searchByIdElement.style.display = 'block';
+        searchByNameElement.style.display = 'block';
         searchByEmailElement.style.display = 'block';
     } else {
         deleteButtonElement.style.display = 'none';
-        searchByIdElement.style.display = 'none';
+        searchByNameElement.style.display = 'none';
         searchByEmailElement.style.display = 'none';
     }
 }
@@ -121,14 +130,14 @@ function deleteAll() {
 }
 
 // Event listener para procurar uma opinião por id
-document.getElementById('search-id').addEventListener('click', function() {
-    var id = prompt('Digite o ID que você deseja procurar');
+document.getElementById('search-name').addEventListener('click', function() {
+    var nome = prompt('Digite o nome que você deseja procurar');
 
-    if (id !== null) {
+    if (nome !== null) {
         var found = false;
 
         for (var i = 0; i < formList.length; i++) {
-            if (formList[i].id == id) {
+            if (formList[i].name.toLowerCase() === nome.toLowerCase()) {
                 alert(
                     `Nome: ${formList[i].name}\n` +
                     `Sobrenome: ${formList[i].lastname}\n` +
@@ -137,15 +146,14 @@ document.getElementById('search-id').addEventListener('click', function() {
                     `Opinião: ${formList[i].opinion}\n`
                     )
                     found = true;
-                    break;
             }
         }
         
         if (!found) {
-            alert("ID não encontrado!");
+            alert("Nome não encontrado!");
         }     
     } else {
-        alert("Nenhum id inserido!");
+        alert("Nenhum nome inserido!");
     }
 })
 
@@ -166,7 +174,6 @@ document.getElementById('search-email').addEventListener('click', function() {
                     `Opinião: ${formList[i].opinion}\n`
                     )
                     found = true;
-                    break;
             }
         }
         
