@@ -5,7 +5,7 @@ var count = 1;
 // Função para adicionar um novo comentário
 function addOpinion(name, lastname, age, email, opinion) {
     var newOpinion = { 
-        id: ++count,
+        id: count++,
         name: name,
         lastname: lastname,
         age: parseInt(age),
@@ -89,6 +89,8 @@ document.getElementById('form-inputs').addEventListener('submit', function (even
     var ageInput = document.getElementById('age');
     var emailInput = document.getElementById('email');
     var opinionInput = document.getElementById('opinion');
+    if(!opinionInput.value) opinionInput.value = "Sem opinião!";
+
     addOpinion(
         nameInput.value,
         lastnameInput.value,
@@ -113,6 +115,9 @@ function cleanFields() {
 function deleteAll() {
     localStorage.clear();
     document.getElementById('list').innerHTML = '';
+    formList = [];
+    count = 1;
+    renderFormList();
 }
 
 // Event listener para procurar uma opinião por id
