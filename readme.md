@@ -18,7 +18,7 @@ Nossa jornada de desenvolvimento contou com o uso das seguintes ferramentas:
 
 - **Figma:** Utilizamos o Figma para prototipar nosso design e garantir uma representação visual precisa de nossa visão.
 
-- **HTML e CSS3:** Implementamos nosso projeto utilizando as tecnologias web HTML e CSS3, garantindo que nossa página fosse responsiva e visualmente atraente em diferentes dispositivos.
+- **HTML, CSS3 e JavaScript:** Implementamos nosso projeto utilizando as tecnologias web HTM, CSS3 e JavaScript, garantindo que nossa página fosse responsiva e visualmente atraente em diferentes dispositivos.
 
 ### Autores
 Este projeto foi concebido e desenvolvido por Victor Gabriel Lucio e Weslley Silva.
